@@ -7,8 +7,8 @@ image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/l
 x-kinRank: "9"
 x-alexaRank: "383974"
 tags: Quotes
-created: "2018-05-20"
-modified: "2018-05-20"
+created: "2018-06-20"
+modified: "2018-06-20"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/apis.md
 specificationVersion: "0.14"
 apis:
@@ -19,10 +19,10 @@ apis:
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/xignite-logo.png
   humanURL: http://www.xignite.com
   baseURL: https://batsrealtime.xignite.com/xBATSRealTime.json/XigniteBATSRealTime//GetRealQuotes
-  tags: Real, Quotes
+  tags: Market Data,Real, Quotes
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/getrealquotes-post-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/getrealquotes-get-openapi.md
 - name: Xignite BATS Real Time Get Real Quotes By Identifiers
   x-api-slug: xignite-bats-real-time
   description: Returns a collection of real time stock quotes for a comma-separated
@@ -30,10 +30,10 @@ apis:
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/xignite-logo.png
   humanURL: http://www.xignite.com
   baseURL: https://batsrealtime.xignite.com/xBATSRealTime.json/XigniteBATSRealTime//GetRealQuotesByIdentifiers
-  tags: Real, Quotes, Identifiers
+  tags: Market Data,Real, Quotes, Identifiers
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/getrealquotesbyidentifiers-post-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/getrealquotesbyidentifiers-get-openapi.md
 - name: Xignite BATS Real Time
   x-api-slug: xignite-bats-real-time
   description: Financial market data on-demand. Xignite financial Web services help
@@ -54,7 +54,7 @@ apis:
   tags: Future, Quotes
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/getfuturequotes-post-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/getfuturequotes-get-openapi.md
 - name: Xignite Global Futures Get Latest Future Quotes
   x-api-slug: xignite-global-futures
   description: Returns latest delayed quotes for multiple future contracts.
@@ -64,7 +64,7 @@ apis:
   tags: Latest, Future, Quotes
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/getlatestfuturequotes-post-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/getlatestfuturequotes-get-openapi.md
 - name: Xignite Global Futures Get Latest Front Month Future Quotes
   x-api-slug: xignite-global-futures
   description: Returns latest quotes for front month futures
@@ -74,7 +74,7 @@ apis:
   tags: Latest, Front, Month, Future, Quotes
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/getlatestfrontmonthfuturequotes-post-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/getlatestfrontmonthfuturequotes-get-openapi.md
 - name: Xignite Global Futures Get All Future Quotes
   x-api-slug: xignite-global-futures
   description: Returns all delayed future quotes for a future base.
@@ -84,7 +84,7 @@ apis:
   tags: Future, Quotes
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/getallfuturequotes-post-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/getallfuturequotes-get-openapi.md
 - name: Xignite Global Futures Get All Option Quotes
   x-api-slug: xignite-global-futures
   description: Returns all delayed future option quotes for a future contract.
@@ -94,7 +94,7 @@ apis:
   tags: Option, Quotes
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/getalloptionquotes-post-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/getalloptionquotes-get-openapi.md
 - name: Xignite Global Futures Get Future Option Quotes
   x-api-slug: xignite-global-futures
   description: Returns delayed future option quotes for multiple future options.
@@ -104,7 +104,7 @@ apis:
   tags: Future, Option, Quotes
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/getfutureoptionquotes-post-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/getfutureoptionquotes-get-openapi.md
 - name: Xignite Global Futures Get Latest Future Option Quotes
   x-api-slug: xignite-global-futures
   description: Returns latest delayed quotes for multiple future options.
@@ -114,7 +114,7 @@ apis:
   tags: Latest, Future, Option, Quotes
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/getlatestfutureoptionquotes-post-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/getlatestfutureoptionquotes-get-openapi.md
 - name: Xignite Global Futures Get Historical Swap Quotes
   x-api-slug: xignite-global-futures
   description: Returns historical swap quotes within a date range
@@ -124,7 +124,7 @@ apis:
   tags: Historical, Swap, Quotes
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/gethistoricalswapquotes-post-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/gethistoricalswapquotes-get-openapi.md
 - name: Xignite Global Futures Get Historical Future Quotes Range
   x-api-slug: xignite-global-futures
   description: Returns historical future quotes on a future contract within a date
@@ -135,7 +135,7 @@ apis:
   tags: Historical, Future, Quotes, Range
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/gethistoricalfuturequotesrange-post-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/gethistoricalfuturequotesrange-get-openapi.md
 - name: Xignite Global Futures
   x-api-slug: xignite-global-futures
   description: Financial market data on-demand. Xignite financial Web services help
@@ -154,10 +154,10 @@ apis:
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/xignite-logo.png
   humanURL: http://www.xignite.com
   baseURL: https://www.xignite.com/xGlobalHistorical.json/XigniteGlobalHistorical//GetEndOfDayQuotes
-  tags: End, Of, Day, Quotes
+  tags: Market Data,End, Of, Day, Quotes
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/getendofdayquotes-post-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/getendofdayquotes-get-openapi.md
 - name: Xignite Global Historical Get End Of Day Quotes Range
   x-api-slug: xignite-global-historical
   description: Returns a quote a complete range of stock quotes for a given equity.
@@ -165,10 +165,10 @@ apis:
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/xignite-logo.png
   humanURL: http://www.xignite.com
   baseURL: https://www.xignite.com/xGlobalHistorical.json/XigniteGlobalHistorical//GetEndOfDayQuotesRange
-  tags: End, Of, Day, Quotes, Range
+  tags: Market Data,End, Of, Day, Quotes, Range
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/getendofdayquotesrange-post-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/getendofdayquotesrange-get-openapi.md
 - name: Xignite Global Historical Get Global Historical Quotes
   x-api-slug: xignite-global-historical
   description: Returns quotes as of a historical date. This includes the adjusted
@@ -176,20 +176,20 @@ apis:
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/xignite-logo.png
   humanURL: http://www.xignite.com
   baseURL: https://www.xignite.com/xGlobalHistorical.json/XigniteGlobalHistorical//GetGlobalHistoricalQuotes
-  tags: Global, Historical, Quotes
+  tags: Market Data,Global, Historical, Quotes
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/getglobalhistoricalquotes-post-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/getglobalhistoricalquotes-get-openapi.md
 - name: Xignite Global Historical Get Global Historical Quotes As Of
   x-api-slug: xignite-global-historical
   description: This operation returns a range of quotes for a security.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/xignite-logo.png
   humanURL: http://www.xignite.com
   baseURL: https://www.xignite.com/xGlobalHistorical.json/XigniteGlobalHistorical//GetGlobalHistoricalQuotesAsOf
-  tags: Global, Historical, Quotes, As, Of
+  tags: Market Data,Global, Historical, Quotes, As, Of
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/getglobalhistoricalquotesasof-post-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/getglobalhistoricalquotesasof-get-openapi.md
 - name: Xignite Global Historical Get Global Historical Quotes Range
   x-api-slug: xignite-global-historical
   description: This operation returns a complete range of stock quotes for a given
@@ -197,10 +197,10 @@ apis:
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/xignite-logo.png
   humanURL: http://www.xignite.com
   baseURL: https://www.xignite.com/xGlobalHistorical.json/XigniteGlobalHistorical//GetGlobalHistoricalQuotesRange
-  tags: Global, Historical, Quotes, Range
+  tags: Market Data,Global, Historical, Quotes, Range
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/getglobalhistoricalquotesrange-post-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/getglobalhistoricalquotesrange-get-openapi.md
 - name: Xignite Global Historical Get Global Historical Quotes Range Extended
   x-api-slug: xignite-global-historical
   description: This operation returns a complete range of global historical quotes
@@ -208,10 +208,10 @@ apis:
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/xignite-logo.png
   humanURL: http://www.xignite.com
   baseURL: https://www.xignite.com/xGlobalHistorical.json/XigniteGlobalHistorical//GetGlobalHistoricalQuotesRangeExtended
-  tags: Global, Historical, Quotes, Range, Extended
+  tags: Market Data,Global, Historical, Quotes, Range, Extended
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/getglobalhistoricalquotesrangeextended-post-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/getglobalhistoricalquotesrangeextended-get-openapi.md
 - name: Xignite Global Historical Get Global Historical Weekly Quotes Range
   x-api-slug: xignite-global-historical
   description: Returns a range of weekly Global Historical quotes for a security.
@@ -219,10 +219,10 @@ apis:
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/xignite-logo.png
   humanURL: http://www.xignite.com
   baseURL: https://www.xignite.com/xGlobalHistorical.json/XigniteGlobalHistorical//GetGlobalHistoricalWeeklyQuotesRange
-  tags: Global, Historical, Weekly, Quotes, Range
+  tags: Market Data,Global, Historical, Weekly, Quotes, Range
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/getglobalhistoricalweeklyquotesrange-post-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/getglobalhistoricalweeklyquotesrange-get-openapi.md
 - name: Xignite Global Historical Get Global Historical Weekly Quotes Range Extended
   x-api-slug: xignite-global-historical
   description: Returns a range of weekly Global Historical quotes extended for a security.
@@ -230,10 +230,10 @@ apis:
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/xignite-logo.png
   humanURL: http://www.xignite.com
   baseURL: https://www.xignite.com/xGlobalHistorical.json/XigniteGlobalHistorical//GetGlobalHistoricalWeeklyQuotesRangeExtended
-  tags: Global, Historical, Weekly, Quotes, Range, Extended
+  tags: Market Data,Global, Historical, Weekly, Quotes, Range, Extended
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/getglobalhistoricalweeklyquotesrangeextended-post-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/getglobalhistoricalweeklyquotesrangeextended-get-openapi.md
 - name: Xignite Global Historical Get Global Historical Quarterly Quotes Range
   x-api-slug: xignite-global-historical
   description: Returns a range of quarterly Global Historical quotes for a security.
@@ -241,10 +241,10 @@ apis:
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/xignite-logo.png
   humanURL: http://www.xignite.com
   baseURL: https://www.xignite.com/xGlobalHistorical.json/XigniteGlobalHistorical//GetGlobalHistoricalQuarterlyQuotesRange
-  tags: Global, Historical, Quarterly, Quotes, Range
+  tags: Market Data,Global, Historical, Quarterly, Quotes, Range
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/getglobalhistoricalquarterlyquotesrange-post-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/getglobalhistoricalquarterlyquotesrange-get-openapi.md
 - name: Xignite Global Historical Get Global Historical Monthly Quotes Range
   x-api-slug: xignite-global-historical
   description: This operation returns a range of monthly quotes for an equity based
@@ -252,10 +252,10 @@ apis:
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/xignite-logo.png
   humanURL: http://www.xignite.com
   baseURL: https://www.xignite.com/xGlobalHistorical.json/XigniteGlobalHistorical//GetGlobalHistoricalMonthlyQuotesRange
-  tags: Global, Historical, Monthly, Quotes, Range
+  tags: Market Data,Global, Historical, Monthly, Quotes, Range
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/getglobalhistoricalmonthlyquotesrange-post-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/getglobalhistoricalmonthlyquotesrange-get-openapi.md
 - name: Xignite Global Historical Get Global Historical Monthly Quotes Range Extended
   x-api-slug: xignite-global-historical
   description: This operation returns a range of monthly quotes extended for an equity
@@ -263,10 +263,10 @@ apis:
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/xignite-logo.png
   humanURL: http://www.xignite.com
   baseURL: https://www.xignite.com/xGlobalHistorical.json/XigniteGlobalHistorical//GetGlobalHistoricalMonthlyQuotesRangeExtended
-  tags: Global, Historical, Monthly, Quotes, Range, Extended
+  tags: Market Data,Global, Historical, Monthly, Quotes, Range, Extended
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/getglobalhistoricalmonthlyquotesrangeextended-post-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/getglobalhistoricalmonthlyquotesrangeextended-get-openapi.md
 - name: Xignite Global Historical
   x-api-slug: xignite-global-historical
   description: Financial market data on-demand. Xignite financial Web services help
@@ -284,50 +284,50 @@ apis:
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/xignite-logo.png
   humanURL: http://www.xignite.com
   baseURL: https://globalmetals.xignite.com/xGlobalMetals.json/XigniteGlobalMetals//GetRealTimeMetalQuotes
-  tags: Real, Time, Metal, Quotes
+  tags: Market Data,Real, Time, Metal, Quotes
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/getrealtimemetalquotes-post-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/getrealtimemetalquotes-get-openapi.md
 - name: Xignite Global Metals Get Historical Metal Quotes
   x-api-slug: xignite-global-metals
   description: Get cross sectional historical metal quotes at a given time.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/xignite-logo.png
   humanURL: http://www.xignite.com
   baseURL: https://globalmetals.xignite.com/xGlobalMetals.json/XigniteGlobalMetals//GetHistoricalMetalQuotes
-  tags: Historical, Metal, Quotes
+  tags: Market Data,Historical, Metal, Quotes
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/gethistoricalmetalquotes-post-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/gethistoricalmetalquotes-get-openapi.md
 - name: Xignite Global Metals Get Latest Historical Metal Quotes
   x-api-slug: xignite-global-metals
   description: Get cross sectional historical metal quotes by a given time.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/xignite-logo.png
   humanURL: http://www.xignite.com
   baseURL: https://globalmetals.xignite.com/xGlobalMetals.json/XigniteGlobalMetals//GetLatestHistoricalMetalQuotes
-  tags: Latest, Historical, Metal, Quotes
+  tags: Market Data,Latest, Historical, Metal, Quotes
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/getlatesthistoricalmetalquotes-post-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/getlatesthistoricalmetalquotes-get-openapi.md
 - name: Xignite Global Metals Get Historical Metal Quotes Range
   x-api-slug: xignite-global-metals
   description: Get historical metal quotes time series.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/xignite-logo.png
   humanURL: http://www.xignite.com
   baseURL: https://globalmetals.xignite.com/xGlobalMetals.json/XigniteGlobalMetals//GetHistoricalMetalQuotesRange
-  tags: Historical, Metal, Quotes, Range
+  tags: Market Data,Historical, Metal, Quotes, Range
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/gethistoricalmetalquotesrange-post-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/gethistoricalmetalquotesrange-get-openapi.md
 - name: Xignite Global Metals Get London Historical Metal Quotes Range
   x-api-slug: xignite-global-metals
   description: Get historical metal quotes based on Legacy London spot prices.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/xignite-logo.png
   humanURL: http://www.xignite.com
   baseURL: https://globalmetals.xignite.com/xGlobalMetals.json/XigniteGlobalMetals//GetLondonHistoricalMetalQuotesRange
-  tags: London, Historical, Metal, Quotes, Range
+  tags: Market Data,London, Historical, Metal, Quotes, Range
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/getlondonhistoricalmetalquotesrange-post-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/getlondonhistoricalmetalquotesrange-get-openapi.md
 - name: Xignite Global Metals
   x-api-slug: xignite-global-metals
   description: Financial market data on-demand. Xignite financial Web services help
@@ -345,70 +345,70 @@ apis:
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/xignite-logo.png
   humanURL: http://www.xignite.com
   baseURL: https://globalrealtimefutures.xignite.com/xGlobalRealTimeFutures.json/XigniteGlobalRealTimeFutures//GetFutureQuotes
-  tags: Future, Quotes
+  tags: Market Data,Future, Quotes
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/getfuturequotes-post-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/getfuturequotes-get-openapi.md
 - name: Xignite Global Real Time Futures Get Latest Future Quotes
   x-api-slug: xignite-global-real-time-futures
   description: Returns latest realtime quotes for multiple future contracts.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/xignite-logo.png
   humanURL: http://www.xignite.com
   baseURL: https://globalrealtimefutures.xignite.com/xGlobalRealTimeFutures.json/XigniteGlobalRealTimeFutures//GetLatestFutureQuotes
-  tags: Latest, Future, Quotes
+  tags: Market Data,Latest, Future, Quotes
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/getlatestfuturequotes-post-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/getlatestfuturequotes-get-openapi.md
 - name: Xignite Global Real Time Futures Get Latest Front Month Future Quotes
   x-api-slug: xignite-global-real-time-futures
   description: Returns latest quotes for front month futures
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/xignite-logo.png
   humanURL: http://www.xignite.com
   baseURL: https://globalrealtimefutures.xignite.com/xGlobalRealTimeFutures.json/XigniteGlobalRealTimeFutures//GetLatestFrontMonthFutureQuotes
-  tags: Latest, Front, Month, Future, Quotes
+  tags: Market Data,Latest, Front, Month, Future, Quotes
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/getlatestfrontmonthfuturequotes-post-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/getlatestfrontmonthfuturequotes-get-openapi.md
 - name: Xignite Global Real Time Futures Get All Future Quotes
   x-api-slug: xignite-global-real-time-futures
   description: Returns all delayed future quotes for a future base.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/xignite-logo.png
   humanURL: http://www.xignite.com
   baseURL: https://globalrealtimefutures.xignite.com/xGlobalRealTimeFutures.json/XigniteGlobalRealTimeFutures//GetAllFutureQuotes
-  tags: Future, Quotes
+  tags: Market Data,Future, Quotes
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/getallfuturequotes-post-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/getallfuturequotes-get-openapi.md
 - name: Xignite Global Real Time Futures Get All Option Quotes
   x-api-slug: xignite-global-real-time-futures
   description: Returns all realtime future option quotes for a future contract.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/xignite-logo.png
   humanURL: http://www.xignite.com
   baseURL: https://globalrealtimefutures.xignite.com/xGlobalRealTimeFutures.json/XigniteGlobalRealTimeFutures//GetAllOptionQuotes
-  tags: Option, Quotes
+  tags: Market Data,Option, Quotes
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/getalloptionquotes-post-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/getalloptionquotes-get-openapi.md
 - name: Xignite Global Real Time Futures Get Future Option Quotes
   x-api-slug: xignite-global-real-time-futures
   description: Returns realtime future option quotes for multiple future options.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/xignite-logo.png
   humanURL: http://www.xignite.com
   baseURL: https://globalrealtimefutures.xignite.com/xGlobalRealTimeFutures.json/XigniteGlobalRealTimeFutures//GetFutureOptionQuotes
-  tags: Future, Option, Quotes
+  tags: Market Data,Future, Option, Quotes
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/getfutureoptionquotes-post-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/getfutureoptionquotes-get-openapi.md
 - name: Xignite Global Real Time Futures Get Latest Future Option Quotes
   x-api-slug: xignite-global-real-time-futures
   description: Returns latest realtime quotes for multiple future options.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/xignite-logo.png
   humanURL: http://www.xignite.com
   baseURL: https://globalrealtimefutures.xignite.com/xGlobalRealTimeFutures.json/XigniteGlobalRealTimeFutures//GetLatestFutureOptionQuotes
-  tags: Latest, Future, Option, Quotes
+  tags: Market Data,Latest, Future, Option, Quotes
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/getlatestfutureoptionquotes-post-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/getlatestfutureoptionquotes-get-openapi.md
 - name: Xignite Global Real Time Futures
   x-api-slug: xignite-global-real-time-futures
   description: Financial market data on-demand. Xignite financial Web services help
@@ -427,10 +427,10 @@ apis:
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/xignite-logo.png
   humanURL: http://www.xignite.com
   baseURL: https://www.xignite.com/xHistorical.json/XigniteHistorical//GetHistoricalQuotesAdjusted
-  tags: Historical, Quotes, Adjusted
+  tags: Market Data,Historical, Quotes, Adjusted
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/gethistoricalquotesadjusted-post-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/gethistoricalquotesadjusted-get-openapi.md
 - name: Xignite Historical Get Historical Monthly Quotes Range Adjusted
   x-api-slug: xignite-historical
   description: This operation returns end of month quotes for a US equity. This includes
@@ -438,10 +438,10 @@ apis:
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/xignite-logo.png
   humanURL: http://www.xignite.com
   baseURL: https://www.xignite.com/xHistorical.json/XigniteHistorical//GetHistoricalMonthlyQuotesRangeAdjusted
-  tags: Historical, Monthly, Quotes, Range, Adjusted
+  tags: Market Data,Historical, Monthly, Quotes, Range, Adjusted
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/gethistoricalmonthlyquotesrangeadjusted-post-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/gethistoricalmonthlyquotesrangeadjusted-get-openapi.md
 - name: Xignite Historical Get Historical Quotes As Of Adjusted
   x-api-slug: xignite-historical
   description: This operation returns a range of quotes for a security. This includes
@@ -449,10 +449,10 @@ apis:
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/xignite-logo.png
   humanURL: http://www.xignite.com
   baseURL: https://www.xignite.com/xHistorical.json/XigniteHistorical//GetHistoricalQuotesAsOfAdjusted
-  tags: Historical, Quotes, As, Adjusted
+  tags: Market Data,Historical, Quotes, As, Adjusted
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/gethistoricalquotesasofadjusted-post-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/gethistoricalquotesasofadjusted-get-openapi.md
 - name: Xignite Historical Get Historical Quotes Range Adjusted
   x-api-slug: xignite-historical
   description: This operation returns a complete range of stock quotes for a US equity.
@@ -460,10 +460,10 @@ apis:
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/xignite-logo.png
   humanURL: http://www.xignite.com
   baseURL: https://www.xignite.com/xHistorical.json/XigniteHistorical//GetHistoricalQuotesRangeAdjusted
-  tags: Historical, Quotes, Range, Adjusted
+  tags: Market Data,Historical, Quotes, Range, Adjusted
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/gethistoricalquotesrangeadjusted-post-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/gethistoricalquotesrangeadjusted-get-openapi.md
 - name: Xignite Historical Get Historical Weekly Quotes Range Adjusted
   x-api-slug: xignite-historical
   description: This operation returns end of week quotes for a US equity. This includes
@@ -471,10 +471,10 @@ apis:
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/xignite-logo.png
   humanURL: http://www.xignite.com
   baseURL: https://www.xignite.com/xHistorical.json/XigniteHistorical//GetHistoricalWeeklyQuotesRangeAdjusted
-  tags: Historical, Weekly, Quotes, Range, Adjusted
+  tags: Market Data,Historical, Weekly, Quotes, Range, Adjusted
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/gethistoricalweeklyquotesrangeadjusted-post-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/gethistoricalweeklyquotesrangeadjusted-get-openapi.md
 - name: Xignite Historical Get Historical Quarterly Quotes Range Adjusted
   x-api-slug: xignite-historical
   description: This operation returns end of quarter quotes for a US equity. This
@@ -482,10 +482,10 @@ apis:
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/xignite-logo.png
   humanURL: http://www.xignite.com
   baseURL: https://www.xignite.com/xHistorical.json/XigniteHistorical//GetHistoricalQuarterlyQuotesRangeAdjusted
-  tags: Historical, Quarterly, Quotes, Range, Adjusted
+  tags: Market Data,Historical, Quarterly, Quotes, Range, Adjusted
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/gethistoricalquarterlyquotesrangeadjusted-post-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/gethistoricalquarterlyquotesrangeadjusted-get-openapi.md
 - name: Xignite Historical Get Historical Quotes
   x-api-slug: xignite-historical
   description: Returns a quote as of a historical date. This includes split adjusted
@@ -493,20 +493,20 @@ apis:
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/xignite-logo.png
   humanURL: http://www.xignite.com
   baseURL: https://www.xignite.com/xHistorical.json/XigniteHistorical//GetHistoricalQuotes
-  tags: Historical, Quotes
+  tags: Market Data,Historical, Quotes
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/gethistoricalquotes-post-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/gethistoricalquotes-get-openapi.md
 - name: Xignite Historical Get Historical Quotes As Of
   x-api-slug: xignite-historical
   description: This operation returns a range of quotes for a security.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/xignite-logo.png
   humanURL: http://www.xignite.com
   baseURL: https://www.xignite.com/xHistorical.json/XigniteHistorical//GetHistoricalQuotesAsOf
-  tags: Historical, Quotes, As, Of
+  tags: Market Data,Historical, Quotes, As, Of
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/gethistoricalquotesasof-post-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/gethistoricalquotesasof-get-openapi.md
 - name: Xignite Historical Get Historical Quotes Range
   x-api-slug: xignite-historical
   description: This operation returns a complete range of stock quotes for a US equity.
@@ -514,10 +514,10 @@ apis:
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/xignite-logo.png
   humanURL: http://www.xignite.com
   baseURL: https://www.xignite.com/xHistorical.json/XigniteHistorical//GetHistoricalQuotesRange
-  tags: Historical, Quotes, Range
+  tags: Market Data,Historical, Quotes, Range
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/gethistoricalquotesrange-post-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/gethistoricalquotesrange-get-openapi.md
 - name: Xignite Historical Get Historical Monthly Quotes Range
   x-api-slug: xignite-historical
   description: This operation returns end of month quotes for a US equity. This includes
@@ -525,10 +525,10 @@ apis:
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/xignite-logo.png
   humanURL: http://www.xignite.com
   baseURL: https://www.xignite.com/xHistorical.json/XigniteHistorical//GetHistoricalMonthlyQuotesRange
-  tags: Historical, Monthly, Quotes, Range
+  tags: Market Data,Historical, Monthly, Quotes, Range
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/gethistoricalmonthlyquotesrange-post-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/gethistoricalmonthlyquotesrange-get-openapi.md
 - name: Xignite Historical Get Historical Weekly Quotes Range
   x-api-slug: xignite-historical
   description: This operation returns end of week quotes for a US equity. This includes
@@ -536,10 +536,10 @@ apis:
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/xignite-logo.png
   humanURL: http://www.xignite.com
   baseURL: https://www.xignite.com/xHistorical.json/XigniteHistorical//GetHistoricalWeeklyQuotesRange
-  tags: Historical, Weekly, Quotes, Range
+  tags: Market Data,Historical, Weekly, Quotes, Range
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/gethistoricalweeklyquotesrange-post-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/gethistoricalweeklyquotesrange-get-openapi.md
 - name: Xignite Historical Get Historical Quarterly Quotes Range
   x-api-slug: xignite-historical
   description: This operation returns end of quarter quotes for a US equity. This
@@ -547,10 +547,10 @@ apis:
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/xignite-logo.png
   humanURL: http://www.xignite.com
   baseURL: https://www.xignite.com/xHistorical.json/XigniteHistorical//GetHistoricalQuarterlyQuotesRange
-  tags: Historical, Quarterly, Quotes, Range
+  tags: Market Data,Historical, Quarterly, Quotes, Range
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/gethistoricalquarterlyquotesrange-post-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/gethistoricalquarterlyquotesrange-get-openapi.md
 - name: Xignite Historical
   x-api-slug: xignite-historical
   description: Financial market data on-demand. Xignite financial Web services help
@@ -571,7 +571,7 @@ apis:
   tags: Quotes
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/getquotes-post-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/getquotes-get-openapi.md
 - name: Xignite NASDAQ Last Sale Get Extended Quotes
   x-api-slug: xignite-nasdaq-last-sale
   description: Returns real-time NASDAQ BASIC quotes for given securities.
@@ -581,7 +581,7 @@ apis:
   tags: Extended, Quotes
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/getextendedquotes-post-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/getextendedquotes-get-openapi.md
 - name: Xignite NASDAQ Last Sale
   x-api-slug: xignite-nasdaq-last-sale
   description: Financial market data on-demand. Xignite financial Web services help
@@ -599,10 +599,10 @@ apis:
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/xignite-logo.png
   humanURL: http://www.xignite.com
   baseURL: https://superquotes.xignite.com/xSuperQuotes.json/XigniteSuperQuotes//GetQuotes
-  tags: Quotes
+  tags: Market Data,Quotes
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/getquotes-post-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/getquotes-get-openapi.md
 - name: Xignite Super Quotes
   x-api-slug: xignite-super-quotes
   description: Financial market data on-demand. Xignite financial Web services help
@@ -615,7 +615,7 @@ apis:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/openapi.md
 x-common:
-- type: x-net-sdk
+- type: x--net-sdk
   url: http://xignite.github.io/DotNetSDK/
 - type: x-base
   url: http://globalmaster.xignite.com
@@ -675,6 +675,10 @@ x-common:
   url: https://resources.xignite.com/webinars
 - type: x-website
   url: http://www.xignite.com
+- type: x-website
+  url: http://xignite.com
+- type: x-website
+  url: http://xignite.com/
 - type: x-white-papers
   url: http://www.xignite.com/market-data/resources/white-papers/
 include: []

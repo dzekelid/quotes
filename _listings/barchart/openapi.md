@@ -4,7 +4,7 @@ x-collection-name: Barchart
 x-complete: 1
 info:
   title: Barchart API
-  description: stock-futures-and-forex-quotes-and-historical-data
+  description: stock-futures-and-forex-quotes-and-historical-data-
   version: 1.0.0
 host: marketdata.websol.barchart.com
 basePath: /
@@ -23,7 +23,7 @@ paths:
         other fields such as Open, High, Low, Close, Bid, Ask, 52-week high and low,
         and more are available.
       operationId: getQuote
-      x-api-path-slug: getquotejson-get
+      x-api-path-slug: getquote-json-get
       parameters:
       - in: query
         name: symbols

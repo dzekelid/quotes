@@ -4,7 +4,7 @@ x-collection-name: IEX
 x-complete: 1
 info:
   title: IEX
-  description: the-iex-api-is-a-set-of-services-designed-for-developers-and-engineers-it-can-be-used-to-build-highquality-apps-and-services-were-always-working-to-improve-the-iex-api-please-check-back-for-enhancements-and-improvements
+  description: the-iex-api-is-a-set-of-services-designed-for-developers-and-engineers--it-can-be-used-to-build-highquality-apps-and-services--were-always-working-to-improve-the-iex-api--please-check-back-for-enhancements-and-improvements-
   termsOfService: https://iextrading.com/api-terms/
   version: 1.0.0
 host: api.iextrading.com
@@ -26,14 +26,14 @@ paths:
       - ~
       - in: query
         name: range
-        description: ' Optional  Used to specify a chart range if chart is used in
-          types parameter'
+        description: Optional  Used to specify a chart range if chart is used in types
+          parameter
       - in: query
         name: symbols
-        description: ' Optional  Comma delimited list of symbols limited to 100'
+        description: Optional  Comma delimited list of symbols limited to 100
       - in: query
         name: types
-        description: ' Required  Comma delimited list of endpoints to call'
+        description: Required  Comma delimited list of endpoints to call
       responses:
         200:
           description: OK
@@ -68,7 +68,7 @@ paths:
       parameters:
       - in: query
         name: displayPercent
-        description: ' Optional  If set to true, all percentage values will be multiplied
+        description: 'Optional  If set to true, all percentage values will be multiplied
           by a factor of 100 (Ex: /stock/aapl/quote?displayPercent=true)'
       responses:
         200:
@@ -105,7 +105,7 @@ paths:
       parameters:
       - in: query
         name: displayPercent
-        description: ' Optional If set to true, all percentage values will be multiplied
+        description: 'Optional If set to true, all percentage values will be multiplied
           by a factor of 100 (Ex: /stock/aapl/quote?displayPercent=true)'
       - in: path
         name: symbol

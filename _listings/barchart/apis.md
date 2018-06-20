@@ -7,8 +7,8 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/21632-www-
 x-kinRank: "7"
 x-alexaRank: "15739"
 tags: Quotes
-created: "2018-05-20"
-modified: "2018-05-20"
+created: "2018-06-20"
+modified: "2018-06-20"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/barchart/apis.md
 specificationVersion: "0.14"
 apis:
@@ -23,9 +23,9 @@ apis:
   tags: Quotes
   properties:
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/barchart/getquotejson-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/barchart/getquote-json-get-postman.md
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/barchart/getquotejson-get-openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/barchart/getquote-json-get-openapi.md
 - name: Barchart API
   x-api-slug: barchart-api
   description: Barchart.com is the leading provider of intraday stock and commodities
