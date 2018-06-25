@@ -3,19 +3,19 @@ name: IEX
 x-slug: iex
 description: IEX, the Investors Exchange, is a fair, simple and transparent stock
   exchange dedicated to investor and issuer protection.
-image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/IEX-Logo.png
+image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28093-iex.jpg
 x-kinRank: "9"
-x-alexaRank: "225220"
+x-alexaRank: "166667"
 tags: Quotes
-created: "2018-06-20"
-modified: "2018-06-20"
+created: "2018-06-25"
+modified: "2018-06-25"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/iex/apis.md
 specificationVersion: "0.14"
 apis:
 - name: IEX Trading API Batch Requests
   x-api-slug: iex-trading-api
   description: Returns batch stock quotes.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/IEX-Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28093-iex.jpg
   humanURL: https://iextrading.com
   baseURL: https://api.iextrading.com//1.0//stock/market/batch
   tags: Market Data,Quotes,Batch
@@ -25,7 +25,7 @@ apis:
 - name: IEX Trading API Delayed Quote
   x-api-slug: iex-trading-api
   description: This returns the 15 minute delayed market quote.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/IEX-Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28093-iex.jpg
   humanURL: https://iextrading.com
   baseURL: https://api.iextrading.com//1.0//stock/{symbol}/delayed-quote
   tags: Market Data,Quotes
@@ -35,7 +35,7 @@ apis:
 - name: IEX Trading API List
   x-api-slug: iex-trading-api
   description: Refer to the quote section.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/IEX-Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28093-iex.jpg
   humanURL: https://iextrading.com
   baseURL: https://api.iextrading.com//1.0//stock/{symbol}/list
   tags: Market Data,Quotes
@@ -46,7 +46,7 @@ apis:
   x-api-slug: iex-trading-api
   description: This returns previous day adjusted price data for a single stock, or
     an object keyed by symbol of price data for the whole market.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/IEX-Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28093-iex.jpg
   humanURL: https://iextrading.com
   baseURL: https://api.iextrading.com//1.0//stock/{symbol}/previous
   tags: Market Data,Quotes,Adjustments
@@ -56,7 +56,7 @@ apis:
 - name: IEX Trading API Quote
   x-api-slug: iex-trading-api
   description: Pulls a stock quote using any ticker symbol.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/IEX-Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28093-iex.jpg
   humanURL: https://iextrading.com
   baseURL: https://api.iextrading.com//1.0//stock/{symbol}/quote
   tags: Market Data,Quotes
@@ -66,7 +66,7 @@ apis:
 - name: IEX Trading API Splits
   x-api-slug: iex-trading-api
   description: Returns stock splits for any date range using ticker symbol.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/IEX-Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28093-iex.jpg
   humanURL: https://iextrading.com
   baseURL: https://api.iextrading.com//1.0//stock/{symbol}/splits/{range}
   tags: Market Data,Quotes,Splits
@@ -77,7 +77,7 @@ apis:
   x-api-slug: iex-trading-api
   description: IEX, the Investors Exchange, is a fair, simple and transparent stock
     exchange dedicated to investor and issuer protection.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/IEX-Logo.png
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28093-iex.jpg
   humanURL: https://iextrading.com
   baseURL: https://api.iextrading.com//1.0
   tags: Quotes
