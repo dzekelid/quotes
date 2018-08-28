@@ -1,0 +1,147 @@
+{
+	"name": "Streadata.io API Gallery - Quotes",
+	"description": "This is a repository of quotes APIs, self-contained as a Github repository, with HTML and YAML representations of the APIs and their surrounding operations.",
+	"image": "http://template.streamdata.gallery/assets/quotes.png",
+	"created": "2018-02-24",
+	"modified": "2018-08-28",
+	"url": "http://quotes.streamdata.gallery/apis.json",
+	"specificationVersion": "0.14",
+	"apis": [
+		{
+			"name": "Xignite",
+			"x-api-slug": "xignite",
+			"description": "Financial market data on-demand. Xignite financial Web services help build smarter websites and applications in minutes with zero up-front investment.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/xignite-logo.png",
+			"humanURL": "http://www.xignite.com",
+			"baseURL": "https://www.xignite.com/xVWAP.json/XigniteVWAP",
+			"tags": "Quotes",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "QUOTE.fm",
+			"x-api-slug": "quote-fm",
+			"description": "",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1123-quote-fm.jpg",
+			"humanURL": "http://quote.fm",
+			"baseURL": "https:///",
+			"tags": "Quotes",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/quote-fm/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "Barchart",
+			"x-api-slug": "barchart",
+			"description": "Barchart.com is the leading provider of intraday stock and commodities real-time or delayed charts with powerful indicators and technical analysis.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/21632-www-barchart-com.jpg",
+			"humanURL": "https://www.barchart.com",
+			"baseURL": "https://marketdata.websol.barchart.com//",
+			"tags": "Quotes",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/barchart/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "AWS EC2",
+			"x-api-slug": "aws-ec2",
+			"description": "Amazon Elastic Compute Cloud is a web service that provides resizable compute capacity in the cloud. It is designed to make web-scale cloud computing easier for developers. Amazon EC2s simple web service interface allows you to obtain and configure capacity with minimal friction. It provides you with complete control of your computing resources and lets you run on Amazon&rsquo;s proven computing environment. Amazon EC2 reduces the time required to obtain and boot new server instances to minutes, allowing you to quickly scale capacity, both up and down, as your computing requirements change. Amazon EC2 changes the economics of computing by allowing you to pay only for capacity that you actually use. Amazon EC2 provides developers the tools to build failure resilient applications and isolate themselves from common failure scenarios.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Compute_AmazonEC2.png",
+			"humanURL": "https://aws.amazon.com/ec2/",
+			"baseURL": ":///",
+			"tags": "Quotes",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/aws-ec2/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "IEX",
+			"x-api-slug": "iex",
+			"description": "IEX, the Investors Exchange, is a fair, simple and transparent stock exchange dedicated to investor and issuer protection.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28093-iex.jpg",
+			"humanURL": "https://iextrading.com",
+			"baseURL": "https://api.iextrading.com//1.0",
+			"tags": "Quotes",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/iex/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "TradeStation",
+			"x-api-slug": "tradestation",
+			"description": "Whether you trade stocks, ETFs, options or futures, TradeStation???s award-winning tools and brokerage services can give you the confidence to achieve your goals.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/tradestation_logo_285x40.png",
+			"humanURL": "http://www.tradestation.com",
+			"baseURL": "https://api.tradestation.com//v2",
+			"tags": "Quotes",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/tradestation/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "CoinMarketCap",
+			"x-api-slug": "coinmarketcap",
+			"description": "Cryptocurrency market cap rankings, charts, and more",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28891-pro-coinmarketcap-com.jpg",
+			"humanURL": "https://pro.coinmarketcap.com",
+			"baseURL": "https://pro-api.coinmarketcap.com//",
+			"tags": "Quotes",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/coinmarketcap/openapi.md"
+				}
+			]
+		}
+	],
+	"tags": "Quotes",
+	"include": [
+		{
+			"name": "Xignite",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/xignite/apis.yaml"
+		},
+		{
+			"name": "QUOTE.fm",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/quote-fm/apis.yaml"
+		},
+		{
+			"name": "Barchart",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/barchart/apis.yaml"
+		},
+		{
+			"name": "AWS EC2",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/aws-ec2/apis.yaml"
+		},
+		{
+			"name": "IEX",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/iex/apis.yaml"
+		},
+		{
+			"name": "TradeStation",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/tradestation/apis.yaml"
+		},
+		{
+			"name": "CoinMarketCap",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/coinmarketcap/apis.yaml"
+		}
+	]
+}

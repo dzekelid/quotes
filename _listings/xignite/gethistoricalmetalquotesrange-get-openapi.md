@@ -15,6 +15,653 @@ produces:
 consumes:
 - application/json
 paths:
+  /GetRealQuotes:
+    get:
+      summary: Get Real Quotes
+      description: Returns a collection of real time stock quotes for a comma-separated
+        list of stock quotes.
+      operationId: GetRealQuotes
+      x-api-path-slug: getrealquotes-get
+      parameters:
+      - in: body
+        name: body
+        schema:
+          $ref: '#/definitions/holder'
+      responses:
+        200:
+          description: OK
+      tags:
+      - Market Data
+      - Real
+      - Quotes
+  /GetRealQuotesByIdentifiers:
+    get:
+      summary: Get Real Quotes By Identifiers
+      description: Returns a collection of real time stock quotes for a comma-separated
+        list of stock quotes.
+      operationId: GetRealQuotesByIdentifiers
+      x-api-path-slug: getrealquotesbyidentifiers-get
+      parameters:
+      - in: body
+        name: body
+        schema:
+          $ref: '#/definitions/holder'
+      responses:
+        200:
+          description: OK
+      tags:
+      - Market Data
+      - Real
+      - Quotes
+      - Identifiers
+  /GetRealQuote:
+    get:
+      summary: Get Real Quote
+      description: Returns real time stock quote for a given stock ticker
+      operationId: GetRealQuote
+      x-api-path-slug: getrealquote-get
+      parameters:
+      - in: body
+        name: body
+        schema:
+          $ref: '#/definitions/holder'
+      responses:
+        200:
+          description: OK
+      tags:
+      - Market Data
+      - Real
+      - Quote
+  /GetRealQuoteByIdentifier:
+    get:
+      summary: Get Real Quote By Identifier
+      description: Returns a real-time quote for a security based on the last trade
+        execution.
+      operationId: GetRealQuoteByIdentifier
+      x-api-path-slug: getrealquotebyidentifier-get
+      parameters:
+      - in: body
+        name: body
+        schema:
+          $ref: '#/definitions/holder'
+      responses:
+        200:
+          description: OK
+      tags:
+      - Market Data
+      - Real
+      - Quote
+      - Identifier
+  /GetFutureQuotes:
+    get:
+      summary: Get Future Quotes
+      description: Returns delayed quotes for multiple future contracts.
+      operationId: GetFutureQuotes
+      x-api-path-slug: getfuturequotes-get
+      parameters:
+      - in: body
+        name: body
+        schema:
+          $ref: '#/definitions/holder'
+      responses:
+        200:
+          description: OK
+      tags:
+      - Future
+      - Quotes
+  /GetLatestFutureQuotes:
+    get:
+      summary: Get Latest Future Quotes
+      description: Returns latest delayed quotes for multiple future contracts.
+      operationId: GetLatestFutureQuotes
+      x-api-path-slug: getlatestfuturequotes-get
+      parameters:
+      - in: body
+        name: body
+        schema:
+          $ref: '#/definitions/holder'
+      responses:
+        200:
+          description: OK
+      tags:
+      - Latest
+      - Future
+      - Quotes
+  /GetLatestFrontMonthFutureQuotes:
+    get:
+      summary: Get Latest Front Month Future Quotes
+      description: Returns latest quotes for front month futures
+      operationId: GetLatestFrontMonthFutureQuotes
+      x-api-path-slug: getlatestfrontmonthfuturequotes-get
+      parameters:
+      - in: body
+        name: body
+        schema:
+          $ref: '#/definitions/holder'
+      responses:
+        200:
+          description: OK
+      tags:
+      - Latest
+      - Front
+      - Month
+      - Future
+      - Quotes
+  /GetAllFutureQuotes:
+    get:
+      summary: Get All Future Quotes
+      description: Returns all delayed future quotes for a future base.
+      operationId: GetAllFutureQuotes
+      x-api-path-slug: getallfuturequotes-get
+      parameters:
+      - in: body
+        name: body
+        schema:
+          $ref: '#/definitions/holder'
+      responses:
+        200:
+          description: OK
+      tags:
+      - Future
+      - Quotes
+  /GetAllOptionQuotes:
+    get:
+      summary: Get All Option Quotes
+      description: Returns all delayed future option quotes for a future contract.
+      operationId: GetAllOptionQuotes
+      x-api-path-slug: getalloptionquotes-get
+      parameters:
+      - in: body
+        name: body
+        schema:
+          $ref: '#/definitions/holder'
+      responses:
+        200:
+          description: OK
+      tags:
+      - Option
+      - Quotes
+  /GetFutureOptionQuotes:
+    get:
+      summary: Get Future Option Quotes
+      description: Returns delayed future option quotes for multiple future options.
+      operationId: GetFutureOptionQuotes
+      x-api-path-slug: getfutureoptionquotes-get
+      parameters:
+      - in: body
+        name: body
+        schema:
+          $ref: '#/definitions/holder'
+      responses:
+        200:
+          description: OK
+      tags:
+      - Future
+      - Option
+      - Quotes
+  /GetLatestFutureOptionQuotes:
+    get:
+      summary: Get Latest Future Option Quotes
+      description: Returns latest delayed quotes for multiple future options.
+      operationId: GetLatestFutureOptionQuotes
+      x-api-path-slug: getlatestfutureoptionquotes-get
+      parameters:
+      - in: body
+        name: body
+        schema:
+          $ref: '#/definitions/holder'
+      responses:
+        200:
+          description: OK
+      tags:
+      - Latest
+      - Future
+      - Option
+      - Quotes
+  /GetHistoricalSwapQuotes:
+    get:
+      summary: Get Historical Swap Quotes
+      description: Returns historical swap quotes within a date range
+      operationId: GetHistoricalSwapQuotes
+      x-api-path-slug: gethistoricalswapquotes-get
+      parameters:
+      - in: body
+        name: body
+        schema:
+          $ref: '#/definitions/holder'
+      responses:
+        200:
+          description: OK
+      tags:
+      - Historical
+      - Swap
+      - Quotes
+  /GetHistoricalFutureQuotesRange:
+    get:
+      summary: Get Historical Future Quotes Range
+      description: Returns historical future quotes on a future contract within a
+        date range
+      operationId: GetHistoricalFutureQuotesRange
+      x-api-path-slug: gethistoricalfuturequotesrange-get
+      parameters:
+      - in: body
+        name: body
+        schema:
+          $ref: '#/definitions/holder'
+      responses:
+        200:
+          description: OK
+      tags:
+      - Historical
+      - Future
+      - Quotes
+      - Range
+  /GetFutureQuote:
+    get:
+      summary: Get Future Quote
+      description: Returns a delayed quote for a future contract.
+      operationId: GetFutureQuote
+      x-api-path-slug: getfuturequote-get
+      parameters:
+      - in: body
+        name: body
+        schema:
+          $ref: '#/definitions/holder'
+      responses:
+        200:
+          description: OK
+      tags:
+      - Future
+      - Quote
+  /GetLatestFutureQuote:
+    get:
+      summary: Get Latest Future Quote
+      description: Returns the latest delayed quote for a future contract.
+      operationId: GetLatestFutureQuote
+      x-api-path-slug: getlatestfuturequote-get
+      parameters:
+      - in: body
+        name: body
+        schema:
+          $ref: '#/definitions/holder'
+      responses:
+        200:
+          description: OK
+      tags:
+      - Latest
+      - Future
+      - Quote
+  /GetSpotFutureQuote:
+    get:
+      summary: Get Spot Future Quote
+      description: Returns a delayed spot quote for a future contract.
+      operationId: GetSpotFutureQuote
+      x-api-path-slug: getspotfuturequote-get
+      parameters:
+      - in: body
+        name: body
+        schema:
+          $ref: '#/definitions/holder'
+      responses:
+        200:
+          description: OK
+      tags:
+      - Spot
+      - Future
+      - Quote
+  /GetLMEFutureQuote:
+    get:
+      summary: Get LME Future Quote
+      description: Returns latest quotes for LME futures
+      operationId: GetLMEFutureQuote
+      x-api-path-slug: getlmefuturequote-get
+      parameters:
+      - in: body
+        name: body
+        schema:
+          $ref: '#/definitions/holder'
+      responses:
+        200:
+          description: OK
+      tags:
+      - LME
+      - Future
+      - Quote
+  /GetFutureOptionQuote:
+    get:
+      summary: Get Future Option Quote
+      description: Returns a delayed future option quote for a future option.
+      operationId: GetFutureOptionQuote
+      x-api-path-slug: getfutureoptionquote-get
+      parameters:
+      - in: body
+        name: body
+        schema:
+          $ref: '#/definitions/holder'
+      responses:
+        200:
+          description: OK
+      tags:
+      - Future
+      - Option
+      - Quote
+  /GetLatestFutureOptionQuote:
+    get:
+      summary: Get Latest Future Option Quote
+      description: Returns latest delayed quote for multiple future option.
+      operationId: GetLatestFutureOptionQuote
+      x-api-path-slug: getlatestfutureoptionquote-get
+      parameters:
+      - in: body
+        name: body
+        schema:
+          $ref: '#/definitions/holder'
+      responses:
+        200:
+          description: OK
+      tags:
+      - Latest
+      - Future
+      - Option
+      - Quote
+  /GetSwapQuote:
+    get:
+      summary: Get Swap Quote
+      description: Returns quote for a swap
+      operationId: GetSwapQuote
+      x-api-path-slug: getswapquote-get
+      parameters:
+      - in: body
+        name: body
+        schema:
+          $ref: '#/definitions/holder'
+      responses:
+        200:
+          description: OK
+      tags:
+      - Swap
+      - Quote
+  /GetEndOfDayQuotes:
+    get:
+      summary: Get End Of Day Quotes
+      description: Returns a quote as of a historical date. This includes the adjusted
+        price as specified.
+      operationId: postGetendofdayquotes
+      x-api-path-slug: getendofdayquotes-get
+      parameters:
+      - in: body
+        name: body
+        schema:
+          $ref: '#/definitions/holder'
+      responses:
+        200:
+          description: OK
+      tags:
+      - Market Data
+      - End
+      - Of
+      - Day
+      - Quotes
+  /GetEndOfDayQuotesRange:
+    get:
+      summary: Get End Of Day Quotes Range
+      description: Returns a quote a complete range of stock quotes for a given equity.
+        This includes the adjusted price as specified.
+      operationId: postGetendofdayquotesrange
+      x-api-path-slug: getendofdayquotesrange-get
+      parameters:
+      - in: body
+        name: body
+        schema:
+          $ref: '#/definitions/holder'
+      responses:
+        200:
+          description: OK
+      tags:
+      - Market Data
+      - End
+      - Of
+      - Day
+      - Quotes
+      - Range
+  /GetGlobalHistoricalQuotes:
+    get:
+      summary: Get Global Historical Quotes
+      description: Returns quotes as of a historical date. This includes the adjusted
+        price as specified.
+      operationId: postGetglobalhistoricalquotes
+      x-api-path-slug: getglobalhistoricalquotes-get
+      parameters:
+      - in: body
+        name: body
+        schema:
+          $ref: '#/definitions/holder'
+      responses:
+        200:
+          description: OK
+      tags:
+      - Market Data
+      - Global
+      - Historical
+      - Quotes
+  /GetGlobalHistoricalQuotesAsOf:
+    get:
+      summary: Get Global Historical Quotes As Of
+      description: This operation returns a range of quotes for a security.
+      operationId: postGetglobalhistoricalquotesasof
+      x-api-path-slug: getglobalhistoricalquotesasof-get
+      parameters:
+      - in: body
+        name: body
+        schema:
+          $ref: '#/definitions/holder'
+      responses:
+        200:
+          description: OK
+      tags:
+      - Market Data
+      - Global
+      - Historical
+      - Quotes
+      - As
+      - Of
+  /GetGlobalHistoricalQuotesRange:
+    get:
+      summary: Get Global Historical Quotes Range
+      description: This operation returns a complete range of stock quotes for a given
+        equity. This includes the adjusted price as specified.
+      operationId: postGetglobalhistoricalquotesrange
+      x-api-path-slug: getglobalhistoricalquotesrange-get
+      parameters:
+      - in: body
+        name: body
+        schema:
+          $ref: '#/definitions/holder'
+      responses:
+        200:
+          description: OK
+      tags:
+      - Market Data
+      - Global
+      - Historical
+      - Quotes
+      - Range
+  /GetGlobalHistoricalQuotesRangeExtended:
+    get:
+      summary: Get Global Historical Quotes Range Extended
+      description: This operation returns a complete range of global historical quotes
+        extended for a given equity. This includes the adjusted price as specified.
+      operationId: postGetglobalhistoricalquotesrangeextended
+      x-api-path-slug: getglobalhistoricalquotesrangeextended-get
+      parameters:
+      - in: body
+        name: body
+        schema:
+          $ref: '#/definitions/holder'
+      responses:
+        200:
+          description: OK
+      tags:
+      - Market Data
+      - Global
+      - Historical
+      - Quotes
+      - Range
+      - Extended
+  /GetGlobalHistoricalWeeklyQuotesRange:
+    get:
+      summary: Get Global Historical Weekly Quotes Range
+      description: Returns a range of weekly Global Historical quotes for a security.
+        For more information, go to http://www.xignite.com/
+      operationId: postGetglobalhistoricalweeklyquotesrange
+      x-api-path-slug: getglobalhistoricalweeklyquotesrange-get
+      parameters:
+      - in: body
+        name: body
+        schema:
+          $ref: '#/definitions/holder'
+      responses:
+        200:
+          description: OK
+      tags:
+      - Market Data
+      - Global
+      - Historical
+      - Weekly
+      - Quotes
+      - Range
+  /GetGlobalHistoricalWeeklyQuotesRangeExtended:
+    get:
+      summary: Get Global Historical Weekly Quotes Range Extended
+      description: Returns a range of weekly Global Historical quotes extended for
+        a security. For more information, go to http://www.xignite.com/
+      operationId: postGetglobalhistoricalweeklyquotesrangeextended
+      x-api-path-slug: getglobalhistoricalweeklyquotesrangeextended-get
+      parameters:
+      - in: body
+        name: body
+        schema:
+          $ref: '#/definitions/holder'
+      responses:
+        200:
+          description: OK
+      tags:
+      - Market Data
+      - Global
+      - Historical
+      - Weekly
+      - Quotes
+      - Range
+      - Extended
+  /GetGlobalHistoricalQuarterlyQuotesRange:
+    get:
+      summary: Get Global Historical Quarterly Quotes Range
+      description: Returns a range of quarterly Global Historical quotes for a security.
+        For more information, go to http://www.xignite.com/
+      operationId: postGetglobalhistoricalquarterlyquotesrange
+      x-api-path-slug: getglobalhistoricalquarterlyquotesrange-get
+      parameters:
+      - in: body
+        name: body
+        schema:
+          $ref: '#/definitions/holder'
+      responses:
+        200:
+          description: OK
+      tags:
+      - Market Data
+      - Global
+      - Historical
+      - Quarterly
+      - Quotes
+      - Range
+  /GetGlobalHistoricalMonthlyQuotesRange:
+    get:
+      summary: Get Global Historical Monthly Quotes Range
+      description: This operation returns a range of monthly quotes for an equity
+        based on the specified date range. This includes the adjusted price as specified.
+      operationId: postGetglobalhistoricalmonthlyquotesrange
+      x-api-path-slug: getglobalhistoricalmonthlyquotesrange-get
+      parameters:
+      - in: body
+        name: body
+        schema:
+          $ref: '#/definitions/holder'
+      responses:
+        200:
+          description: OK
+      tags:
+      - Market Data
+      - Global
+      - Historical
+      - Monthly
+      - Quotes
+      - Range
+  /GetGlobalHistoricalMonthlyQuotesRangeExtended:
+    get:
+      summary: Get Global Historical Monthly Quotes Range Extended
+      description: This operation returns a range of monthly quotes extended for an
+        equity based on the specified date range. This includes the adjusted price
+        as specified.
+      operationId: postGetglobalhistoricalmonthlyquotesrangeextended
+      x-api-path-slug: getglobalhistoricalmonthlyquotesrangeextended-get
+      parameters:
+      - in: body
+        name: body
+        schema:
+          $ref: '#/definitions/holder'
+      responses:
+        200:
+          description: OK
+      tags:
+      - Market Data
+      - Global
+      - Historical
+      - Monthly
+      - Quotes
+      - Range
+      - Extended
+  /GetGlobalHistoricalQuote:
+    get:
+      summary: Get Global Historical Quote
+      description: Returns a quote as of a historical date. This includes the adjusted
+        price as specified.
+      operationId: postGetglobalhistoricalquote
+      x-api-path-slug: getglobalhistoricalquote-get
+      parameters:
+      - in: body
+        name: body
+        schema:
+          $ref: '#/definitions/holder'
+      responses:
+        200:
+          description: OK
+      tags:
+      - Market Data
+      - Global
+      - Historical
+      - Quote
+  /GetEndOfDayQuote:
+    get:
+      summary: Get End Of Day Quote
+      description: Returns a quote as of a historical date. This includes the adjusted
+        price as specified.
+      operationId: postGetendofdayquote
+      x-api-path-slug: getendofdayquote-get
+      parameters:
+      - in: body
+        name: body
+        schema:
+          $ref: '#/definitions/holder'
+      responses:
+        200:
+          description: OK
+      tags:
+      - Market Data
+      - End
+      - Of
+      - Day
+      - Quote
   /GetRealTimeMetalQuotes:
     get:
       summary: Get Real Time Metal Quotes

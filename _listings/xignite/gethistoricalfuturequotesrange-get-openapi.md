@@ -16,6 +16,83 @@ produces:
 consumes:
 - application/json
 paths:
+  /GetRealQuotes:
+    get:
+      summary: Get Real Quotes
+      description: Returns a collection of real time stock quotes for a comma-separated
+        list of stock quotes.
+      operationId: GetRealQuotes
+      x-api-path-slug: getrealquotes-get
+      parameters:
+      - in: body
+        name: body
+        schema:
+          $ref: '#/definitions/holder'
+      responses:
+        200:
+          description: OK
+      tags:
+      - Market Data
+      - Real
+      - Quotes
+  /GetRealQuotesByIdentifiers:
+    get:
+      summary: Get Real Quotes By Identifiers
+      description: Returns a collection of real time stock quotes for a comma-separated
+        list of stock quotes.
+      operationId: GetRealQuotesByIdentifiers
+      x-api-path-slug: getrealquotesbyidentifiers-get
+      parameters:
+      - in: body
+        name: body
+        schema:
+          $ref: '#/definitions/holder'
+      responses:
+        200:
+          description: OK
+      tags:
+      - Market Data
+      - Real
+      - Quotes
+      - Identifiers
+  /GetRealQuote:
+    get:
+      summary: Get Real Quote
+      description: Returns real time stock quote for a given stock ticker
+      operationId: GetRealQuote
+      x-api-path-slug: getrealquote-get
+      parameters:
+      - in: body
+        name: body
+        schema:
+          $ref: '#/definitions/holder'
+      responses:
+        200:
+          description: OK
+      tags:
+      - Market Data
+      - Real
+      - Quote
+  /GetRealQuoteByIdentifier:
+    get:
+      summary: Get Real Quote By Identifier
+      description: Returns a real-time quote for a security based on the last trade
+        execution.
+      operationId: GetRealQuoteByIdentifier
+      x-api-path-slug: getrealquotebyidentifier-get
+      parameters:
+      - in: body
+        name: body
+        schema:
+          $ref: '#/definitions/holder'
+      responses:
+        200:
+          description: OK
+      tags:
+      - Market Data
+      - Real
+      - Quote
+      - Identifier
   /GetFutureQuotes:
     get:
       summary: Get Future Quotes

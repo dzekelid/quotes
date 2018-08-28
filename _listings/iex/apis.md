@@ -7,84 +7,89 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28093-iex.
 x-kinRank: "9"
 x-alexaRank: "166667"
 tags: Quotes
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/iex/apis.md
 specificationVersion: "0.14"
 apis:
-- name: IEX Trading API Batch Requests
-  x-api-slug: iex-trading-api
+- name: IEX - Batch Requests
+  x-api-slug: stockmarketbatch-get
   description: Returns batch stock quotes.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28093-iex.jpg
   humanURL: https://iextrading.com
-  baseURL: https://api.iextrading.com//1.0//stock/market/batch
-  tags: Market Data,Quotes,Batch
+  baseURL: https://api.iextrading.com//1.0
+  tags: Marketplace, Market Data, Data Provider, API Provider, Financial Services,
+    Profiles, General Data, Service API, Relative Data, Pedestal, Historical Data
+    API, Relative StreamRank, Streams
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/iex/stockmarketbatch-get-openapi.md
-- name: IEX Trading API Delayed Quote
-  x-api-slug: iex-trading-api
+- name: IEX - Delayed Quote
+  x-api-slug: stocksymboldelayedquote-get
   description: This returns the 15 minute delayed market quote.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28093-iex.jpg
   humanURL: https://iextrading.com
-  baseURL: https://api.iextrading.com//1.0//stock/{symbol}/delayed-quote
-  tags: Market Data,Quotes
+  baseURL: https://api.iextrading.com//1.0
+  tags: Marketplace, Market Data, Data Provider, API Provider, Financial Services,
+    Profiles, General Data, Service API, Relative Data, Pedestal, Historical Data
+    API, Relative StreamRank, Streams
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/iex/stocksymboldelayedquote-get-openapi.md
-- name: IEX Trading API List
-  x-api-slug: iex-trading-api
+- name: IEX - List
+  x-api-slug: stocksymbollist-get
   description: Refer to the quote section.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28093-iex.jpg
   humanURL: https://iextrading.com
-  baseURL: https://api.iextrading.com//1.0//stock/{symbol}/list
-  tags: Market Data,Quotes
+  baseURL: https://api.iextrading.com//1.0
+  tags: Marketplace, Market Data, Data Provider, API Provider, Financial Services,
+    Profiles, General Data, Service API, Relative Data, Pedestal, Historical Data
+    API, Relative StreamRank, Streams
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/iex/stocksymbollist-get-openapi.md
-- name: IEX Trading API Previous
-  x-api-slug: iex-trading-api
+- name: IEX - Previous
+  x-api-slug: stocksymbolprevious-get
   description: This returns previous day adjusted price data for a single stock, or
     an object keyed by symbol of price data for the whole market.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28093-iex.jpg
   humanURL: https://iextrading.com
-  baseURL: https://api.iextrading.com//1.0//stock/{symbol}/previous
-  tags: Market Data,Quotes,Adjustments
+  baseURL: https://api.iextrading.com//1.0
+  tags: Marketplace, Market Data, Data Provider, API Provider, Financial Services,
+    Profiles, General Data, Service API, Relative Data, Pedestal, Historical Data
+    API, Relative StreamRank, Streams
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/iex/stocksymbolprevious-get-openapi.md
-- name: IEX Trading API Quote
-  x-api-slug: iex-trading-api
+- name: IEX - Quote
+  x-api-slug: stocksymbolquote-get
   description: Pulls a stock quote using any ticker symbol.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28093-iex.jpg
   humanURL: https://iextrading.com
-  baseURL: https://api.iextrading.com//1.0//stock/{symbol}/quote
-  tags: Market Data,Quotes
+  baseURL: https://api.iextrading.com//1.0
+  tags: Marketplace, Market Data, Data Provider, API Provider, Financial Services,
+    Profiles, General Data, Service API, Relative Data, Pedestal, Historical Data
+    API, Relative StreamRank, Streams
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/iex/stocksymbolquote-get-openapi.md
-- name: IEX Trading API Splits
-  x-api-slug: iex-trading-api
+- name: IEX - Splits
+  x-api-slug: stocksymbolsplitsrange-get
   description: Returns stock splits for any date range using ticker symbol.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28093-iex.jpg
   humanURL: https://iextrading.com
-  baseURL: https://api.iextrading.com//1.0//stock/{symbol}/splits/{range}
-  tags: Market Data,Quotes,Splits
+  baseURL: https://api.iextrading.com//1.0
+  tags: Marketplace, Market Data, Data Provider, API Provider, Financial Services,
+    Profiles, General Data, Service API, Relative Data, Pedestal, Historical Data
+    API, Relative StreamRank, Streams
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/iex/stocksymbolsplitsrange-get-openapi.md
-- name: IEX Trading API
-  x-api-slug: iex-trading-api
-  description: IEX, the Investors Exchange, is a fair, simple and transparent stock
-    exchange dedicated to investor and issuer protection.
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28093-iex.jpg
-  humanURL: https://iextrading.com
-  baseURL: https://api.iextrading.com//1.0
-  tags: Quotes
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/quotes/master/_listings/iex/openapi.md
 x-common:
+- type: x-api-gallery
+  url: http://idx.broker.api.gallery.streamdata.io
+- type: x-api-stack
+  url: http://iex.stack.network
 - type: x-authentication
   url: https://iextrading.com/developer/docs/#authentication
 - type: x-blog
